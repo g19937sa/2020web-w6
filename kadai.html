@@ -57,15 +57,16 @@
         if (i === daikiti) {
           div.textContent = '大吉';
           div.classList.add('dai');
-        } else (i === chukiti){
+        } else (i === chukiti) {
           div.textContent = '中吉';
           div.classList.add('chu');
-        } else (i === shokiti){
+        } else (i === shokiti) {
           div.textContent = '小吉';
           div.classList.add('sho');
         } else {
           div.textContent = '凶';
           div.classList.add('kyo');
+        }
       });
 
       document.body.appendChild(div);
