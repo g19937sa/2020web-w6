@@ -46,8 +46,8 @@
 
     const num = 10;
     const daikiti = Math.floor(Math.random() * num);
-    const chuukiti = Math.floor(Math.random() * num);
-    const shoukiti = Math.floor(Math.random() * num);
+    const chukiti = Math.floor(Math.random() * num);
+    const shokiti = Math.floor(Math.random() * num);
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
@@ -57,10 +57,10 @@
         if (i === daikiti) {
           div.textContent = '大吉';
           div.classList.add('dai');
-        } else {
+        } else (i === chukiti){
           div.textContent = '中吉';
           div.classList.add('chu');
-        } else {
+        } else (i === shokiti){
           div.textContent = '小吉';
           div.classList.add('sho');
         } else {
